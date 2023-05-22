@@ -3,7 +3,6 @@ import './App.css';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import MovieList from './components/MovieList';
 import Home from './components/Home';
 import FavList from './components/FavList';
 
