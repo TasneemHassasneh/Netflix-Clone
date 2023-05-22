@@ -1,12 +1,22 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import MovieList from './components/MovieList';
 import Home from './components/Home';
+import FavList from './components/FavList';
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Movies</h1>
-      <Home />
+     
+     <Navbar />
+     <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path="/favorites" element={<FavList/>} />
+    </Routes>
     </div>
   );
 }
