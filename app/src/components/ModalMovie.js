@@ -16,6 +16,7 @@ const ModalMovie = ({ movie }) => {
         movieId: movie.id,
         title: movie.title,
         comments: comments,
+        poster_path:movie.poster_path,
       };
   
       fetch('https://movie-library-190n.onrender.com/getMovies', {
